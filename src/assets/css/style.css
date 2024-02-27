@@ -896,4 +896,7 @@ a {
         overflow: auto;
         scroll-behavior: smooth;
     }
+    .profile {
+        flex-direction: column;
+    }
 }

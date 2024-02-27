@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
+import Notification from "./Notification"
+import ghs from "../assets/images/ghs.jpg"
 
 const Home = () => {
     const projectRef = useRef(null);
@@ -146,11 +148,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -232,11 +234,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -317,11 +319,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -405,11 +407,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -493,11 +495,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -581,11 +583,11 @@ const Home = () => {
                             <div className="project-box-footer">
                                 <div className="participants">
                                     <img
-                                        src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <img
-                                        src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80"
+                                        src={ghs}
                                         alt="participant"
                                     />
                                     <button
@@ -619,7 +621,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-      
+      {
+          <Notification value={false}/>
+      }
         </>
     );
 };

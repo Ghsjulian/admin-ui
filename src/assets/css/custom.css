@@ -71,6 +71,187 @@ label:hover {
 .form img {
     width: 80%;
     height: 150px;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 8px;
+}
+
+.setting-popup {
+    top: 7%;
+    right: 12px;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 3px 2px rgba(212, 212, 212, 0.157);
+    border-radius: 3.5px;
+    width: 250px;
+    padding: 0.3rem 0.7rem;
+    z-index: 900;
+    align-items: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.dark .setting-popup {
+    background: #1e202c;
+    color: #878787;
+}
+.dark .setting-popup a svg {
+    color: #d4d4d4;
+}
+.setting-popup a {
+    display: flex;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    align-items: center;
+}
+.setting-popup a svg {
+    color: #1d1d1d;
+    font-weight: 300;
+    margin: 0 0.5rem;
+    font-size: 13px important;
+}
+.setting-popup a span {
+    color: #606060;
+    font-size: 15px;
+}
+.setting-popup a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 0.5rem;
+}
+.profile-menu {
+    display: none;
+}
+.main-container #admin-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: fill;
+    margin: 0 auto;
+}
+.profile {
+    max-width: 700px;
+    margin: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.7rem;
+}
+.profile .col {
+    max-width: 350px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #323232;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.profile .col li {
+    list-style: none;
+    text-align: left;
+    font-weight: 500;
+    margin: 0.6rem auto;
+}
+.col li span {
+    font-weight: 300;
+    color: #676767;
+    text-align: left;
+    justify-content: left;
+}
+.col li a {
+    color: #00bdef;
+    text-decoration: none;
+}
+.dark .profile .col,
+.col li,
+li span {
+    color: #878787;
+}
+
+.login {
+    max-width: 550px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20% auto;
+    padding: 1.5rem;
+}
+.login form {
+    width: 100%;
+    background: #fff;
+    box-shadow: 2px 3px 10px rgba(178, 178, 178, 0.61);
+    margin: 0.8rem;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.login form .error {
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    margin: 0.2rem;
+    color: rgb(144, 0, 0);
+    background: rgba(235, 11, 11, 0.155);
+    font-size: 12px;
+    font-family: Monospace;
+    font-weight: 400;
+    text-transform: capitalize;
+    animation: zoom 0.5s linear;
+}
+.login form .success {
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    margin: 0.2rem;
+    color: rgb(0, 102, 9);
+    background: rgba(69, 236, 0, 0.172);
+    font-size: 12px;
+    font-family: Monospace;
+    font-weight: 400;
+    text-transform: capitalize;
+    animation: zoom 0.5s linear;
+}
+.login form input {
+    outline: none;
+    background: transparent;
+    border: 1.1px solid #000;
+    padding: 0.7rem 1rem;
+    margin: 0.6rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login form input:focus {
+    transition: 0.2s ease-in;
+    border: 1.5px solid rgb(17, 249, 0);
+}
+.login form .login-btn {
+    outline: none;
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login form .login-btn:hover {
+    outline: none;
+    background: rgb(7, 98, 0);
+    color: #fff;
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1.5;
+    }
 }
